@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  myservice:
+    build:
+      context: .
+      dockerfile: deployments/Dockerfile
+    command: ./scripts/build.sh
+    volumes:
+      - ./:/app
